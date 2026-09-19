@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The MBTI for Mentors</title>
+<title>Mentor Behavior Type Indicator</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;1,9..144,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -634,8 +634,8 @@
     <!-- INTRO -->
     <section class="intro" id="intro">
       <div class="eyebrow">A research-grounded quiz</div>
-      <h1>The MBTI <em>for Mentors</em></h1>
-      <p class="subtitle">Mentor Behavior Type Indicator</p>
+      <h1>Mentor Behavior <em>Type Indicator</em></h1>
+      <p class="subtitle">A profile of how you respond to your mentee's emotions</p>
 
       <div class="intro-card">
         <h3>How it works</h3>
@@ -650,7 +650,7 @@
             Validator (V) ↔ Solver (S)
           </div>
         </div>
-        <p style="margin-top: 16px;">At the end you'll get a four-letter type and learn how it connects to my dissertation research on emotion management in mentoring.</p>
+        <p style="margin-top: 16px;">At the end you'll get a two-letter type and learn how it connects to my dissertation research on emotion management in mentoring.</p>
       </div>
 
       <button class="start-btn" onclick="startQuiz()">Begin</button>
@@ -1242,7 +1242,7 @@
   function shareResult() {
     const r = window._lastResult;
     if (!r) return;
-    const text = `I'm ${r.code} — ${r.profile.name}.\n\n${r.profile.tagline}\n\nFrom The MBTI for Mentors, based on Yunqi (Kay) He's dissertation research on emotion management in youth mentoring.`;
+    const text = `I'm ${r.code}: ${r.profile.name}.\n\n${r.profile.tagline}\n\nFrom the Mentor Behavior Type Indicator, based on Yunqi (Kay) He's dissertation research on emotion management in youth mentoring.`;
 
     if (navigator.clipboard) {
       navigator.clipboard.writeText(text).then(() => {
